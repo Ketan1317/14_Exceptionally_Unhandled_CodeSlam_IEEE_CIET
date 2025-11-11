@@ -2,9 +2,8 @@ import HeroVideo from "/main_Video.mp4";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[114vh] overflow-hidden">
       
-      {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden">
         <video
           src={HeroVideo}
@@ -13,7 +12,6 @@ const Hero = () => {
           muted
           className="w-full h-full object-cover"
         />
-        {/* Blur + subtle gradient overlay */}
         <div className="absolute inset-0 backdrop-blur-sm bg-black/40"></div>
       </div>
 
@@ -23,7 +21,7 @@ const Hero = () => {
 
           {/* Left Title */}
           <div>
-            <h2 className="text-4xl font-bold tracking-wide">Vino & Velvet</h2>
+            <h2 className="text-4xl  font-bold tracking-wide">Vino & Velvet</h2>
             <p className="text-sm tracking-wider opacity-85">
               Fine Italian vibes paired with elegance
             </p>
@@ -43,7 +41,7 @@ const Hero = () => {
             )}
 
             {/* Dropdown */}
-            <select className="px-3 py-1 bg-black/30 rounded-md outline-none cursor-pointer border border-white/30 text-white">
+            <select className="px-5 py-2 rounded-md outline-none cursor-pointer  text-white">
               <option value="EN">EN</option>
               <option value="HIN">HIN</option>
               <option value="PB">PB</option>
