@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Vino and Velveta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Vino and Velveta** is a modern, elegant React-based website for an Italian restaurant. It showcases the restaurant's menu, ambience, and special dishes, offering users a visually appealing and interactive experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Features
 
-## React Compiler
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop devices.  
+- **Menu Showcase**: Highlights the restaurant's menu items with images and descriptions.  
+- **Parallax & Scroll Animations**: Smooth scrolling experience using Framer Motion and CSS.  
+- **Sleek UI Elements**: Elegant typography, animations, and interactive components.  
+- **Overlay Sections**: Beautiful hero and recipe/menu overlays for visual storytelling.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React.js  
+- Tailwind CSS  
+- Framer Motion (for animations)  
+- CSS3 & HTML5  
+- Optional: Vite or Create React App (depending on setup)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Navigate to the project directory
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+cd vino-and-velveta
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Install dependencies
+
+npm install
+# or
+yarn install
+
+
+Start the development server
+
+npm start
+# or
+yarn start
+
+
+Open http://localhost:3000
+ in your browser to view the site.
+
+📄 Project Structure (Optional)
+/src
+  /components   # React components like Hero, Menu, AfterHero, etc.
+  /assets       # Images, icons, and media files
+  /pages        # Page components (if using Next.js)
+  /styles       # CSS or Tailwind configurations
+
+📌 Author
+
+Ketan Goyal
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/vino-and-velveta.git
