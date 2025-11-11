@@ -24,6 +24,40 @@
 
 ---
 
+
+Navigate to the project directory
+
+cd vino-and-velveta
+
+
+Install dependencies
+
+npm install
+# or
+yarn install
+
+
+Start the development server
+
+npm start
+# or
+yarn start
+
+
+Open http://localhost:3000
+ in your browser to view the site.
+
+📄 Project Structure (Optional)
+/src
+  /components   # React components like Hero, Menu, AfterHero, etc.
+  /assets       # Images, icons, and media files
+  /pages        # Page components (if using Next.js)
+  /styles       # CSS or Tailwind configurations
+
+📌 Author
+
+Ketan Goyal
+
 ## 🚀 Installation & Setup
 
 1. **Clone the repository**
