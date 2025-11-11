@@ -7,7 +7,6 @@ import Pollo_alla from "/Pollo alla.jpeg";
 import Cotolette from "/Cotoletta alla Milanese.jpeg";
 import maroce_soup from "/maroce soup.jpeg";
 
-// All original names, premium descriptions
 const recipesData = [
   {
     title: "Sushi",
@@ -62,7 +61,6 @@ const recipesData = [
 const Recipies = () => {
   return (
     <section className="bg-cream py-20 px-6 md:px-12 lg:px-20">
-      {/* Premium Grid Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
         {recipesData.map((recipe, index) => (
           <div
@@ -71,20 +69,18 @@ const Recipies = () => {
               index % 2 === 1 ? "lg:flex-row-reverse" : ""
             }`}
           >
-            {/* Image Container with fixed width & height */}
             <div className="relative lg:w-80 lg:h-80 w-full h-64 overflow-hidden">
               <img
                 src={recipe.img}
                 alt={recipe.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="absolute bottom-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-xs font-semibold tracking-wider">
                 FEATURED
               </div>
             </div>
 
-            {/* Text Content - make it same height as image */}
             <div className="p-8 lg:p-10 flex-1 flex flex-col justify-center lg:h-80">
               <h2 className="text-3xl font-serif font-medium text-burgundy mb-3">
                 {recipe.title}

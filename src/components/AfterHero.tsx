@@ -1,10 +1,6 @@
 import img1 from "/rest1.png";
 import img2 from "/rest2.png";
 
-import pizzaBg from "/okok.png"
-import pastaBg from "/okok2.png"; 
-
-
 const AfterHero = () => {
   return (
     <div className="flex relative z-20 justify-center">
@@ -25,7 +21,7 @@ const AfterHero = () => {
               <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Reservations</h2>
               <p className="text-gray-600 leading-relaxed">
                 Call us to book your table. For peak hours, advance booking is recommended.
-                Enjoy authentic Italian cuisine and curated wines.
+                
               </p>
               <button className="px-6 py-2.5 bg-linear-to-r from-amber-400 to-amber-500 text-white font-semibold rounded-full shadow-lg hover:from-amber-500 hover:to-amber-600 active:scale-95 transition-transform">
                 Book a Table
@@ -33,7 +29,6 @@ const AfterHero = () => {
             </div>
           </div>
 
-          {/* About section */}
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
             <div className="w-full md:w-48 h-44 rounded-xl overflow-hidden shadow-lg ring-1 ring-black/5">
               <img src={img2} alt="about" className="w-full h-full object-cover" />

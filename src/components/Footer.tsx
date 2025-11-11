@@ -1,6 +1,3 @@
-import React from "react";
-
-// Import ALL your images
 import sushi from "/sushi.png";
 import pasta from "/pasta.png";
 import pizza from "/pizza.png";
@@ -26,7 +23,6 @@ const galleryImages = [
 const Footer = () => {
   return (
     <footer className="relative bg-black text-white overflow-hidden">
-      {/* Floating Image Gallery (Blurred & Animated) */}
       <div className="absolute inset-x-0 top-0 h-32 md:h-40 opacity-20 pointer-events-none">
         <div className="flex animate-scroll gap-8 h-full items-center">
           {[...galleryImages, ...galleryImages].map((img, i) => (
@@ -40,10 +36,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main Footer Content */}
       <div className="relative z-10 pt-24 pb-12 px-6 md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16">
-          {/* Brand & Tagline */}
           <div className="md:col-span-1">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gold mb-3">
               Vino & Velvet
@@ -53,7 +47,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-5 font-medium">
               Explore
@@ -72,7 +65,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-5 font-medium">
               Visit Us
@@ -93,14 +85,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Hours & Social */}
           <div>
             <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-5 font-medium">
               Hours
             </h3>
             <p className="text-sm text-gray-300 font-light">
-              Mon–Thu: 12 PM – 11 PM<br />
-              Fri–Sun: 12 PM – 1 AM
+              Mon-Thu: 12 PM - 11 PM<br />
+              Fri-Sun: 12 PM - 1 AM
             </p>
             <div className="flex space-x-4 mt-6">
               {["facebook", "instagram", "twitter"].map((social) => (

@@ -6,10 +6,8 @@ const RecipiesOverlay = () => {
       className="relative -mt-28 w-full h-[90vh] bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${headImg})` }}
     >
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
 
-      {/* Centered text */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
           RECIPIES
